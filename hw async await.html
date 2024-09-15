@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="ab.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        async function mul(a,b) {
+            var responce=await a*b
+            display(responce)
+
+        }
+        function display(mul){
+            document.getElementById("result").innerHTML=mul
+        }
+        mul(6,8)
+    </script>
+</body>
+</html>
